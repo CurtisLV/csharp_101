@@ -6,13 +6,16 @@ namespace ExquisiteCorpse
   {
     static void Main(string[] args)
     {
-      // BuildACreature("ghost", "monster", "bug");
+      BuildACreature("ghost", "monster", "bug");
       RandomMode();
-      // SwitchCase(1,1,1);
+      // SwitchCase(1,1,1)
     }
 
     static void BuildACreature(string head, string body, string feet) {
-
+      int headNum1 = TranslateToNumber(head);
+      int headNum2 = TranslateToNumber(body);
+      int headNum3 = TranslateToNumber(feet);
+      SwitchCase(headNum1, headNum2, headNum3);
     }
 
     static void SwitchCase(int head, int body, int feet) {
