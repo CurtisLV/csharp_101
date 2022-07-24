@@ -6,10 +6,49 @@ namespace ExquisiteCorpse
   {
     static void Main(string[] args)
     {
-      MonsterHead();
-      MonsterBody();
-      MonsterFeet();
+        BuildACreature("ghost", "ghost", "monster");
+    }
 
+        static void BuildACreature(string head, string body, string feet) {
+      switch (head) {
+        case "ghost":
+          GhostHead();
+          break;
+        case "bug":
+          BugHead();
+          break;
+        case "monster":
+          MonsterHead();
+          break;
+        default:
+          break;
+      }
+      switch (body) {
+        case "ghost":
+          GhostBody();
+          break;
+        case "bug":
+          BugBody();
+          break;
+        case "monster":
+          MonsterBody();
+          break;
+        default:
+          break;
+      }
+      switch (feet) {
+        case "ghost":
+          GhostFeet();
+          break;
+        case "bug":
+          BugFeet();
+          break;
+        case "monster":
+          MonsterFeet();
+          break;
+        default:
+          break;
+      }
     }
 
     static void GhostHead()
