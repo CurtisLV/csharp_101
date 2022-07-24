@@ -6,7 +6,10 @@ namespace ExquisiteCorpse
   {
     static void Main(string[] args)
     {
-      
+      MonsterHead();
+      MonsterBody();
+      MonsterFeet();
+
     }
 
     static void GhostHead()
