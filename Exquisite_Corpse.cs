@@ -11,12 +11,13 @@ namespace ExquisiteCorpse
       // SwitchCase(1,1,1)
     }
 
-    static void BuildACreature(string head, string body, string feet) {
+    static void BuildACreature(string head = "ghost", string body = "monster", string feet = "bug") {
       int headNum1 = TranslateToNumber(head);
       int headNum2 = TranslateToNumber(body);
       int headNum3 = TranslateToNumber(feet);
       SwitchCase(headNum1, headNum2, headNum3);
     }
+
 
     static void SwitchCase(int head, int body, int feet) {
       switch (head) {
