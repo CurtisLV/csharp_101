@@ -10,6 +10,7 @@ namespace CaesarCipher
       
       Console.Write("Please enter a secret message: ");
       string input = Console.ReadLine();
+      input = input.ToLower();
       char[] secretMessage = input.ToCharArray();
       char[] encryptedMessage = new char[secretMessage.Length];
 
