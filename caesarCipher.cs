@@ -22,7 +22,9 @@ namespace CaesarCipher
           //   indexAlphabet += 3;
           //   encryptedMessage[i] = alphabet[indexAlphabet];
           // }
-          
+          indexAlphabet = (indexAlphabet + 3) % 26;
+          encryptedMessage[i] = alphabet[indexAlphabet];
+
           Console.WriteLine(letter + ", " + alphabet[indexAlphabet] + ", " + encryptedMessage[i]);
        }
       string finalEncryptedMsg = String.Join("", encryptedMessage);
