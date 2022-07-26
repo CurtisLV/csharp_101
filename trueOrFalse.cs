@@ -6,13 +6,9 @@ namespace TrueOrFalse
   {
 		static void Main(string[] args)
     {
-      // Do not edit these lines
       Console.WriteLine("Welcome to 'True or False?'\nPress Enter to begin:");
       string entry = Console.ReadLine();
       Tools.SetUpInputStream(entry);
-
-      // Type your code below
-
       string[] questions = {
         "Is the sky blue?",
         "Is grass green?",
@@ -20,8 +16,13 @@ namespace TrueOrFalse
         "Are dogs barking?",
         "Are cats barking?"
       };
-
       bool[] answers = { true, true, false, true, false };
+
+      RunQuiz(questions, answers);
+    }
+
+    static void RunQuiz(string[] questions, bool[] answers) {
+
       bool[] responses = new bool[questions.Length];
 
       if (questions.Length != answers.Length) {
@@ -62,8 +63,6 @@ namespace TrueOrFalse
       }
 
       Console.WriteLine($"You got {score} out of 5 correct!");
-
     }
-
   }
 }
