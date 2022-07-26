@@ -17,7 +17,7 @@ namespace TrueOrFalse
         "Is the sky blue?",
         "Is grass green?",
         "Is sun black?",
-        "Are dogs barkings?",
+        "Are dogs barking?",
         "Are cats barking?"
       };
 
@@ -46,10 +46,24 @@ namespace TrueOrFalse
         }
         responses[askingIndex] = inputBool;
         askingIndex++;
-
       }
 
+      int scoringIndex = 0;
+      int score = 0;
+
+      foreach (bool answer in answers) {
+        bool temp = responses[scoringIndex];
+        Console.WriteLine($"Input: {temp}| Answer: {answer}");
+        
+        if (temp == answer) {
+          score++;
+        }
+        scoringIndex++;
+      }
+
+      Console.WriteLine($"You got {score} out of 5 correct!");
 
     }
+
   }
 }
