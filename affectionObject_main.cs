@@ -13,7 +13,7 @@ namespace DatingProfile
         "reading advice columns"
       };
       
-      Profile sam = new Profile("Sam Drakilla", 30, "New York", "USA", "he/him");
+      Profile sam = new Profile("Sam Dracula", 30, "New York", "USA", "he/him");
       sam.SetHobbies(hobbies);
       Console.WriteLine(sam.ViewProfile());
     }
