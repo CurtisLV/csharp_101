@@ -4,6 +4,12 @@
 
 ### Interfaces
 
+-   In C#, an *interface* contains definitions for a group of related functionalities that a class can implement.
+-   Interfaces are useful because they guarantee how a class behaves. This, along with the fact that a class can implement multiple interfaces, helps organize and modularize components of software.
+-   It is best practice to start the name of an interface with "I".
+
+<!-- Delete/amend the below -->
+
 -   Learned that interfaces are useful to guarantee certain functionality across multiple classes
 -   Built an interface using the `interface` keyword
 -   Defined properties and methods (but not constructors or fields) in the interface
