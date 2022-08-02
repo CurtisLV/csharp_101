@@ -54,3 +54,9 @@ As a last note: a class can implement multiple interfaces. For example, `Sedan`
 -   Being immutable also means that a `string` reference will always point to the original object, so "modifying" one reference to a `string` will not affect other references to it
 -   With the equality operator (`==`), strings are checked for value, not referential, equality
 -   A `string` variable can be unassigned, `null`, or empty. Empty strings can be represented by `String.Empty` or `""` --- they're equivalent
+
+We've already seen one `static` property `Empty` and one `static` method, `IsNullOrEmpty()`:
+
+```cs
+string s = String.Empty;bool isEmpty = String.IsNullOrEmpty(s);
+```
