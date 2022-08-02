@@ -58,5 +58,6 @@ As a last note: a class can implement multiple interfaces. For example, `Sedan`
 We've already seen one `static` property `Empty` and one `static` method, `IsNullOrEmpty()`:
 
 ```cs
-string s = String.Empty;bool isEmpty = String.IsNullOrEmpty(s);
+string s = String.Empty;
+bool isEmpty = String.IsNullOrEmpty(s);
 ```
