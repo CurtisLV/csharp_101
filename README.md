@@ -42,3 +42,7 @@ As a last note: a class can implement multiple interfaces. For example, `Sedan`
 -   If a reference is not set to any value it is *unassigned* and cannot perform any operations
 
 ### The Object class
+
+-   Every type, eventually, inherits from `Object`
+-   `Object` members include `Equals()`, `ToString()`, and `GetType()`
+-   The `ToString()` method allows `Console.WriteLine()` to work for all types
