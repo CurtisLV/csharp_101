@@ -68,9 +68,19 @@ bool isEmpty = String.IsNullOrEmpty(s);
 using System.Collections.Generic;
 ```
 
-Here are four common range-related methods:
+-   A list, or `List<T>`, is a generic, sequential data structure. The specific type that it contains is specified upon instantiation.
+-   Lists are effectively unlimited. They "grow" and "shrink" as the number of elements rises and falls.
+-   List values can be accessed by index using square brackets: `[ ]`.
+-   To create an empty list, use a basic constructor. To create a list with values, use *object initialization*.
+-   `Add()` is used to add an element to a list.
+-   `Remove()` is used to remove an element from the list. It returns `true` if it is successful, `false` otherwise.
+-   `Count` is the number of elements in the array.
+-   `Contains()` returns `true` if the argument exists in the list, `false` otherwise.
 
--   `AddRange()` --- takes an array or list as an argument. Adds the values to the end of the list. Returns nothing.
--   `InsertRange()` --- takes an `int` and array or list as an argument. Adds the values at the `int` index. Returns nothing.
--   `RemoveRange()` --- takes two `int` values. The first `int` is the index at which to begin removing and the second `int` is the number of elements to remove. Returns nothing.
--   `GetRange()` --- takes two `int` values. The first `int` is the index of the first desired element and the second `int` is the number of elements in the desired range. Returns a list of the same type.
+-   Lists are a type of *generic collection*, which are defined with generic type parameters. The type parameters are specified when instantiating any generic class.
+
+-   A sequence within a list is called a *range*. There are specific methods for working with ranges, including `GetRange()`, `AddRange()`, `InsertRange()`, and `RemoveRange()`.
+    -   `AddRange()` --- takes an array or list as an argument. Adds the values to the end of the list. Returns nothing.
+    -   `InsertRange()` --- takes an `int` and array or list as an argument. Adds the values at the `int` index. Returns nothing.
+    -   `RemoveRange()` --- takes two `int` values. The first `int` is the index at which to begin removing and the second `int` is the number of elements to remove. Returns nothing.
+    -   `GetRange()` --- takes two `int` values. The first `int` is the index of the first desired element and the second `int` is the number of elements in the desired range. Returns a list of the same type.
