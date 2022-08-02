@@ -62,7 +62,11 @@ string s = String.Empty;
 bool isEmpty = String.IsNullOrEmpty(s);
 ```
 
-### Lists°
+### Lists
+
+```cs
+using System.Collections.Generic;
+```
 
 Here are four common range-related methods:
 
