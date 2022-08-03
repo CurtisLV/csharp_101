@@ -90,3 +90,9 @@ using System.Collections.Generic;
 ```cs
 using System.Linq;
 ```
+
+Often times we use LINQ with generic collections (like lists), so you may see both namespaces imported into a file:
+
+```cs
+using System.Collections.Generic;using System.Linq;
+```
