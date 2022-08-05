@@ -7,6 +7,72 @@ namespace NumberGuesser
         // Entry Point method
         static void Main(string[] args)
             {
+            GetAppInfo();
+            GreetUser();
+
+
+            while (true)
+            {
+                // Set correct number
+                Random rand = new Random();
+                int correctNumber = rand.Next(1, 11);
+
+
+                int guess = 0;
+
+                Console.WriteLine("Guess a number between 1 and 10");
+
+                while (guess != correctNumber)
+                {
+                    string input = Console.ReadLine();
+
+                    // Make sure Input is a number
+                    if (!int.TryParse(input, out guess))
+                    {
+                        PrintColorMsg(ConsoleColor.Red, "Please enter an actual number!");
+                        continue;
+                    }
+
+
+
+                    // Cast to int and put in guess
+                    guess = Int32.Parse(input);
+
+                    // Match guess to correct number
+                    if (guess != correctNumber)
+                    {
+                        PrintColorMsg(ConsoleColor.Red, "Wrong number, please try again!");
+                    }
+
+                }
+
+                PrintColorMsg(ConsoleColor.Yellow, "You guessed correctly!!!");
+
+                // Do you want to play again?
+                Console.WriteLine("Play again? [Y or N]");
+                
+                string inputPlayAgain = Console.ReadLine().ToUpper();
+
+                if (inputPlayAgain == "Y")
+                {
+                    continue;
+                }
+                else if (inputPlayAgain == "N")
+                {
+                    return;
+                }
+                else
+                {
+                    return;
+                }
+
+            }
+
+      
+        }
+     
+        static void GetAppInfo()
+        {
             // Set app vars
             string appName = "Number Guesser";
             string appVersion = "1.0.0";
@@ -16,54 +82,25 @@ namespace NumberGuesser
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"{appName}: Version {appVersion} by {appAuthor}");
             Console.ResetColor();
+        }
 
+        static void GreetUser()
+        {
             Console.WriteLine("What is your name?");
             string inputName = Console.ReadLine();
-
             Console.WriteLine($"Hello, {inputName}! Let's play a game...");
-
-            // Set correct number
-            Random rand = new Random();
-            int correctNumber = rand.Next(1, 11);
-
-
-            int guess = 0;
-
-            Console.WriteLine("Guess a number between 1 and 10");
-          
-            while (guess != correctNumber)
-            {
-                string input = Console.ReadLine();
-
-                // Make sure Input is a number
-                if (!int.TryParse(input, out guess))
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Please enter an actual number!");
-                    Console.ResetColor();
-                    continue;
-                }
-
-               
-
-                // Cast to int and put in guess
-                guess = Int32.Parse(input);
-
-                // Match guess to correct number
-                if (guess != correctNumber)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Wrong number, please try again!");
-                    Console.ResetColor();
-                }
-
-            }
-
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("You guessed correctly!!!");
-            Console.ResetColor();
-
-
         }
+
+        // Print console color msg
+
+        static void PrintColorMsg(ConsoleColor color, string msg)
+        {
+            Console.ForegroundColor = color;
+            Console.WriteLine(msg);
+            Console.ResetColor();
+        }
+
+
+
         }
     }
