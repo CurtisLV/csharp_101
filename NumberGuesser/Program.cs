@@ -79,9 +79,8 @@ namespace NumberGuesser
             string appAuthor = "Kārlis M.";
 
             // Change console text color
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"{appName}: Version {appVersion} by {appAuthor}");
-            Console.ResetColor();
+            PrintColorMsg(ConsoleColor.Green, $"{appName}: Version {appVersion} by {appAuthor}");
+
         }
 
         static void GreetUser()
