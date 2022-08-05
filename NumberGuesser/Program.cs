@@ -10,14 +10,11 @@ namespace NumberGuesser
             GetAppInfo();
             GreetUser();
 
-
             while (true)
             {
                 // Set correct number
                 Random rand = new Random();
                 int correctNumber = rand.Next(1, 11);
-
-
                 int guess = 0;
 
                 Console.WriteLine("Guess a number between 1 and 10");
@@ -32,8 +29,6 @@ namespace NumberGuesser
                         PrintColorMsg(ConsoleColor.Red, "Please enter an actual number!");
                         continue;
                     }
-
-
 
                     // Cast to int and put in guess
                     guess = Int32.Parse(input);
