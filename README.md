@@ -75,6 +75,36 @@ You learned two "sub-shortcuts" within lambda expressions:
     bool hasEvenNumbers = Array.Exists(numbers, num => num % 2 == 0 );
     ```
 
+## Loops
+
+-   A *loop* is a structure in programming where the instructions are written once, but a computer can execute them multiple times
+-   Each execution of those instructions is called an *iteration*
+-   `while` loops repeat until a condition changes
+-   `do...while` loops execute once, and then repeat until a condition changes
+-   `for` loops repeat for a specified number of times
+-   `foreach` loops repeat for each item in a collection
+-   _jump statements_, like `break`, `continue`, and `return` are used to add additional control flow to loops
+
+## Basic Classes & Objects
+
+### Class
+
+-   A *class* represents a custom data type. In C#, the class defines the kinds of information and methods included in a custom type.
+-   The process of creating an instance is called *instantiation*. Today we *instantiate* a class; yesterday they *instantiated* a class, and so on.
+
+### Fields
+
+-   Fields are one type of class *member*, which is the general term for the building blocks of a class.
+-   It is common practice to name fields using all lowercase (`name` instead of `Name`). This makes fields easy to recognize later on.
+-   Each instance has a `name` field, but the value may differ across instances.
+
+### Properties
+
+Properties are another type of class member. Each property is like a spokesperson for a field: it controls the access (getting and setting) to that field. We can use this to validate values before they are set to a field. A property is made up of two methods:
+
+-   a `get()` method, or getter: called when the property is accessed
+-   a `set()` method, or setter: called when the property is assigned a value
+
 ## Interfaces & Inheritance
 
 ### Interfaces
