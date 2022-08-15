@@ -1,6 +1,8 @@
 # csharp_101
 
-## Method Calls and Input
+## Methods
+
+### Method Calls and Input
 
 -   Call a method with its name and parentheses:
 
@@ -37,6 +39,13 @@
 
 -   In *method overloading*, multiple methods can have the same name, as long as they have different method *signatures*.
 -   A method *signature* is a method's name and parameter types in order.
+
+### Method Output
+
+-   Methods return values with the `return` keyword.
+-   Every method has a return type, designated in its method signature. That type must match the type of the value actually returned.
+-   If a method returns no type, its return type is `void`.
+-   `out` parameters can be used to return multiple values from a method.
 
 ## Interfaces & Inheritance
 
