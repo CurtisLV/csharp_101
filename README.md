@@ -108,7 +108,10 @@ Properties are another type of class member. Each property is like a spokesperso
 There are also _automatic property_:
 
 ```cs
-public string Size{ get; set; }
+public string Size
+{
+    get; set;
+}
 ```
 
 In this form, you don't have to write out the `get()` and `set()` methods, and you don't have to define a `size` field at all! A hidden field is defined in the background for us. All we have to worry about is the `Size` property.
@@ -144,7 +147,18 @@ If no constructor is defined in a class, one is automatically created for us. It
 The parameter for the constructor `area` looks a lot like the old field `area` and the new property `Area`. It's good to be explicit when writing code so that there is no room for misinterpretation. We can refer to the current instance of a class with the `this` keyword.
 
 ```cs
-class Forest{  public int Area  { /* property omitted */ }   public Forest(int area)  {    this.Area = area;  }}
+class Forest
+{  
+    public int Area  
+    {
+        /* property omitted */
+    }   
+
+    public Forest(int area)  
+    {    
+        this.Area = area;  
+    }
+}
 ```
 
 `this.Area = area` means "when this constructor is used to make a new instance, use the argument `area` to set the value of this new instance's `Area` field".
