@@ -105,6 +105,19 @@ Properties are another type of class member. Each property is like a spokesperso
 -   a `get()` method, or getter: called when the property is accessed
 -   a `set()` method, or setter: called when the property is assigned a value
 
+There are also _automatic property_:
+
+```cs
+public string Size{ get; set; }
+```
+
+In this form, you don't have to write out the `get()` and `set()` methods, and you don't have to define a `size` field at all! A hidden field is defined in the background for us. All we have to worry about is the `Size` property.
+
+Say we want programs to get the value of the property, but we don't want programs to set the value of the property. Then we either:
+
+1.  don't include a `set()` method, or
+2.  make the `set()` method private.
+
 ## Interfaces & Inheritance
 
 ### Interfaces
