@@ -118,6 +118,11 @@ Say we want programs to get the value of the property, but we don't want program
 1.  don't include a `set()` method, or
 2.  make the `set()` method private.
 
+### Methods
+
+The third type of member in classes is *methods*.
+Methods are a useful way to organize chunks of code to perform a task. But most methods belong to a class, so methods are also used to define how an instance of a class behaves. You can think of them as the "actions" that an object can perform.
+
 ## Interfaces & Inheritance
 
 ### Interfaces
