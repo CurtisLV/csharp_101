@@ -123,6 +123,22 @@ Say we want programs to get the value of the property, but we don't want program
 The third type of member in classes is *methods*.
 Methods are a useful way to organize chunks of code to perform a task. But most methods belong to a class, so methods are also used to define how an instance of a class behaves. You can think of them as the "actions" that an object can perform.
 
+### Constructors
+
+C# has a special type of method, called a *constructor*, a method that's run every time an object is created to set those values at once.
+It looks like a method, but there is no return type listed and the method name is the name of its enclosing class:
+
+```cs
+class  Forest\
+{\
+  public  Forest()\
+  {\
+  }\
+}
+```
+
+If no constructor is defined in a class, one is automatically created for us. It takes no parameters, so it's called a *parameterless constructor*.
+
 ## Interfaces & Inheritance
 
 ### Interfaces
