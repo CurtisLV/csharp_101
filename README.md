@@ -173,6 +173,8 @@ Forest f = new Forest(400);
 
 The word `this` might seem frustratingly vague. Think back to the "class is to instance as blueprint is to house" analogy. The class/blueprint has to use the generic `this` because the class/blueprint is going to be reused for every instance/house.
 
+### Overloading Constructors
+
 ## Interfaces & Inheritance
 
 ### Interfaces
