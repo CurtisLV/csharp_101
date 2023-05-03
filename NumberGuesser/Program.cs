@@ -1,12 +1,12 @@
 ﻿// Namespace
 namespace NumberGuesser
-    {
+{
     // Main Class
     internal class Program
-        {
+    {
         // Entry Point method
         static void Main(string[] args)
-            {
+        {
             GetAppInfo();
             GreetUser();
 
@@ -38,14 +38,13 @@ namespace NumberGuesser
                     {
                         PrintColorMsg(ConsoleColor.Red, "Wrong number, please try again!");
                     }
-
                 }
 
                 PrintColorMsg(ConsoleColor.Yellow, "You guessed correctly!!!");
 
                 // Do you want to play again?
                 Console.WriteLine("Play again? [Y or N]");
-                
+
                 string inputPlayAgain = Console.ReadLine().ToUpper();
 
                 if (inputPlayAgain == "Y")
@@ -60,12 +59,9 @@ namespace NumberGuesser
                 {
                     return;
                 }
-
             }
-
-      
         }
-     
+
         static void GetAppInfo()
         {
             // Set app vars
@@ -75,7 +71,6 @@ namespace NumberGuesser
 
             // Change console text color
             PrintColorMsg(ConsoleColor.Green, $"{appName}: Version {appVersion} by {appAuthor}");
-
         }
 
         static void GreetUser()
@@ -93,8 +88,5 @@ namespace NumberGuesser
             Console.WriteLine(msg);
             Console.ResetColor();
         }
-
-
-
-        }
     }
+}
